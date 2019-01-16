@@ -1,0 +1,6 @@
+puphpet/config-custom.yaml
+.idea/
+.vagrant
+wordpress
+# exclude .gitkeep in order to keep wordpress/public_html in the repository
+!wordpress/public_html/.gitkeep
