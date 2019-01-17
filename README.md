@@ -15,7 +15,7 @@ This vagrant environment provisions for VirtualBox the following:
     2. error_reporting = -1 
     3. date.timezone = UTC
     4. PHP-FPM INI; error_log = /var/log/php-fpm.log
-    5. PHP modules: cli, intl, xml, dom, gmagick, SimpleXML, ssh2, xml, xmlreader, curl, date, exif, filter, ftp, gd, hash, iconv, imagick, json, libxml, mbstring, mysqli, openssl, pcre, posix, sockets, SPL, tokenizer, zlib, gmagick, ssh2, exif, imagick
+    5. PHP modules: cli, intl, xml, dom, gmagick, SimpleXML, ssh2, xmlreader, curl, exif, ftp, gd, iconv, imagick, json, mbstring, mysqli, posix, sockets, tokenizer, zip, unzip
 7. Composer
 8. Xdebug
 9. WP-CLI (available as system service: `$ wp-cli` )

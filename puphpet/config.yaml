@@ -90,6 +90,8 @@ server:
         - bash-completion
         - htop
         - vim
+        - nano
+        - unzip
 users_groups:
     install: '1'
     groups:
@@ -283,6 +285,7 @@ php:
             - posix
             - sockets
             - tokenizer
+            - zip
         pear: {  }
         pecl: {  }
     ini:
