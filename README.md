@@ -77,6 +77,25 @@ installation or use `wp` to install a new one (see more on that [below](#wp-cli)
                 - en_US.UTF-8
             timezone: UTC
 
+Remember to also change the ServerName in your non-SSL and SSL vhosts.
+
+For non-SSL:
+    vhosts:
+        vhost1:
+            servername: wordpress.test
+            serveraliases:
+                - www.wordpress.test
+            docroot: /home/wordpress/public_html
+            port: '80'
+
+For SSL:
+    vhost_7a1:
+        servername: wordpress.test
+        serveraliases:
+            - www.wordpress.test
+        docroot: /home/wordpress/public_html
+        port: '443'
+
 ### Important Note
 During provisioning, Vagrant _might_ fail to install ruby since it requires GPG signing 
 that require the keys already installed. (see https://rvm.io/rvm/security)
