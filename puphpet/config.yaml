@@ -224,6 +224,8 @@ apache:
             serveraliases:
                 - www.wordpress.test
             docroot: /home/wordpress/public_html
+            error_log_file: /home/wordpress/error.log
+            error_log: true
             port: '443'
             setenvif:
                 - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
